@@ -6,7 +6,11 @@ data class BroadcastListItem (
     val date: String,
     val description: String,
     val imgUrl: String?
-)
+) {
+    override fun toString(): String{
+        return "${this.title}, ${this.date}, ${this.description}, ${this.url}, ${this.imgUrl}"
+    }
+}
 
 data class Broadcast (
     val title: String,
