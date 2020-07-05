@@ -18,9 +18,9 @@ application {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    implementation("org.jsoup:jsoup:1.10.3")
-    implementation("com.squareup.okhttp3:okhttp:4.3.1")
-    implementation("commons-io:commons-io:2.6")
+    implementation("org.jsoup:jsoup:1.13.1")
+    implementation("com.squareup.okhttp3:okhttp:4.7.2")
+    implementation("commons-io:commons-io:2.7")
     implementation("net.jthink:jaudiotagger:2.2.3")
 
     testImplementation(platform("org.spockframework:spock-bom:2.0-M1-groovy-2.5"))

@@ -114,7 +114,7 @@ object BroadcastSnatcher {
             else {
                 val targetMp3Path = filePathForBroadcast(broadcast.date, broadcast.title, outputDirectoryPath)
                 if (writeBroadcastToFile(response.body!!.byteStream(), targetMp3Path)){
-                    val imageStream = fetchImageStream(broadcast.imgUrl, client)
+                    val imageStream = fetchImageStream("https://cdn-st2.rtr-vesti.ru/vh/pictures/q/717/169.jpg", client)
                     if(writeTags(broadcast, imageStream, targetMp3Path)) {
                         return targetMp3Path
                     }
